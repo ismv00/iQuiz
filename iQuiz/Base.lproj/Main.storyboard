@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7UM-ht-uee">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
@@ -16,28 +16,79 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="D4r-Tg-4nl">
-                                <rect key="frame" x="76" y="201" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="D4r-Tg-4nl">
+                                <rect key="frame" x="88" y="267" width="217" height="104"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dM-Z2-SVF">
-                                <rect key="frame" x="79" y="391" width="235" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dM-Z2-SVF">
+                                <rect key="frame" x="64" y="395" width="265" height="62"/>
                                 <color key="backgroundColor" red="0.45490196078431372" green="0.19607843137254902" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="2XC-XV-hfE"/>
+                                </constraints>
                                 <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Iniciar Quiz">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="botaoIniciar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BDe-UZ-VJW"/>
+                                    <segue destination="f5k-8N-qtY" kind="show" id="hEM-Ng-zat"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.32156862745098036" green="0.11764705882352941" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0dM-Z2-SVF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="0GC-hP-tfq"/>
+                            <constraint firstItem="D4r-Tg-4nl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J7o-Hk-z7k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0dM-Z2-SVF" secondAttribute="trailing" constant="64" id="KSl-br-3Vl"/>
+                            <constraint firstItem="0dM-Z2-SVF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LiS-Kh-GjX"/>
+                            <constraint firstItem="0dM-Z2-SVF" firstAttribute="top" secondItem="D4r-Tg-4nl" secondAttribute="bottom" constant="24" id="cMA-1U-ilI"/>
+                            <constraint firstItem="0dM-Z2-SVF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="puQ-1g-Ry6"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="T9T-gL-jy9"/>
+                    <connections>
+                        <outlet property="MostrarBotao" destination="0dM-Z2-SVF" id="hcG-Bd-SbX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="3414.5038167938928" y="3.5211267605633805"/>
+        </scene>
+        <!--Quiz View Controller-->
+        <scene sceneID="5k9-iq-9sd">
+            <objects>
+                <viewController id="f5k-8N-qtY" customClass="QuizViewController" customModule="iQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ykc-Dq-Bqk">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="uAU-00-E2J"/>
+                        <color key="backgroundColor" red="0.32156862745098036" green="0.11764705882352941" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3DD-gI-sq4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qrk-jT-UJm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4388.5496183206105" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GkY-eG-CNh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7UM-ht-uee" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GcT-wX-hyW">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="EiV-TC-V6g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XLH-lc-Ve0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2487.7862595419847" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>

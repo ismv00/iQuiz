@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95537F0D2A8A8F1A00BE77EB /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95537F0C2A8A8F1A00BE77EB /* QuizViewController.swift */; };
 		95CA212F2A871C6D00515A2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CA212E2A871C6D00515A2B /* AppDelegate.swift */; };
 		95CA21312A871C6D00515A2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CA21302A871C6D00515A2B /* SceneDelegate.swift */; };
 		95CA21332A871C6E00515A2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CA21322A871C6E00515A2B /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		95537F0C2A8A8F1A00BE77EB /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		95CA212B2A871C6D00515A2B /* iQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95CA212E2A871C6D00515A2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95CA21302A871C6D00515A2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				95CA21372A871C6F00515A2B /* Assets.xcassets */,
 				95CA21392A871C6F00515A2B /* LaunchScreen.storyboard */,
 				95CA213C2A871C6F00515A2B /* Info.plist */,
+				95537F0C2A8A8F1A00BE77EB /* QuizViewController.swift */,
 			);
 			path = iQuiz;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				95CA21332A871C6E00515A2B /* ViewController.swift in Sources */,
 				95CA212F2A871C6D00515A2B /* AppDelegate.swift in Sources */,
 				95CA21312A871C6D00515A2B /* SceneDelegate.swift in Sources */,
+				95537F0D2A8A8F1A00BE77EB /* QuizViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
