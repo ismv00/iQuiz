@@ -9,10 +9,26 @@ import UIKit
 
 class QuizViewController: UIViewController {
 
+    @IBOutlet weak var tituloQuestaoLabel: UILabel!
+    
+    @IBOutlet var botoesRespostas: [UIButton]!
+    
+    @IBAction func respostaBotaoPressionado(_ sender: UIButton) {
+        print(sender.tag)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+       configurarLayout()
         // Do any additional setup after loading the view.
+    }
+    
+    func configurarLayout() {
+        navigationItem.hidesBackButton = true
+        
+        for botao in botoesRespostas {
+            botao.layer.cornerRadius = 12.0
+        }
     }
     
 

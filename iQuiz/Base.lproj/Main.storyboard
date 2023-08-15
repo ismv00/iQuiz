@@ -63,10 +63,78 @@
                     <view key="view" contentMode="scaleToFill" id="ykc-Dq-Bqk">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual feitiço para desarmar o seu oponente, em Harry Poter?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ia-81-JM8">
+                                <rect key="frame" x="54" y="240" width="285" height="133.66666666666663"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaO-vZ-OpK">
+                                <rect key="frame" x="64" y="435.66666666666669" width="265" height="62"/>
+                                <color key="backgroundColor" red="0.4549019608" green="0.1960784314" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="sDV-VL-JLr"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resposta 01"/>
+                                <connections>
+                                    <action selector="respostaBotaoPressionado:" destination="f5k-8N-qtY" eventType="touchUpInside" id="wXq-pi-Sm7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFw-my-APt">
+                                <rect key="frame" x="64" y="529.66666666666663" width="265" height="62"/>
+                                <color key="backgroundColor" red="0.4549019608" green="0.1960784314" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="EWR-QT-dHQ"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resposta 02"/>
+                                <connections>
+                                    <action selector="respostaBotaoPressionado:" destination="f5k-8N-qtY" eventType="touchUpInside" id="NYD-UH-GOd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vX2-Tx-6FO">
+                                <rect key="frame" x="64" y="623.66666666666663" width="265" height="62"/>
+                                <color key="backgroundColor" red="0.4549019608" green="0.1960784314" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="ejP-kA-GH3"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resposta 03"/>
+                                <connections>
+                                    <action selector="respostaBotaoPressionado:" destination="f5k-8N-qtY" eventType="touchUpInside" id="QQo-T4-cOJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="uAU-00-E2J"/>
                         <color key="backgroundColor" red="0.32156862745098036" green="0.11764705882352941" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jaO-vZ-OpK" firstAttribute="top" secondItem="9Ia-81-JM8" secondAttribute="bottom" constant="62" id="8Ld-vR-b9U"/>
+                            <constraint firstItem="vX2-Tx-6FO" firstAttribute="leading" secondItem="uAU-00-E2J" secondAttribute="leading" constant="64" id="Acb-7U-SEu"/>
+                            <constraint firstItem="9Ia-81-JM8" firstAttribute="centerX" secondItem="ykc-Dq-Bqk" secondAttribute="centerX" id="CKd-cA-FnU"/>
+                            <constraint firstItem="9Ia-81-JM8" firstAttribute="leading" secondItem="uAU-00-E2J" secondAttribute="leading" constant="54" id="D9W-pV-3OC"/>
+                            <constraint firstItem="jaO-vZ-OpK" firstAttribute="leading" secondItem="uAU-00-E2J" secondAttribute="leading" constant="64" id="Fsf-q0-bir"/>
+                            <constraint firstItem="uAU-00-E2J" firstAttribute="trailing" secondItem="vX2-Tx-6FO" secondAttribute="trailing" constant="64" id="M4A-35-HAe"/>
+                            <constraint firstItem="vX2-Tx-6FO" firstAttribute="top" secondItem="jFw-my-APt" secondAttribute="bottom" constant="32" id="XEg-dA-Ez3"/>
+                            <constraint firstItem="jFw-my-APt" firstAttribute="leading" secondItem="uAU-00-E2J" secondAttribute="leading" constant="64" id="Y4L-b5-tUa"/>
+                            <constraint firstItem="9Ia-81-JM8" firstAttribute="top" secondItem="uAU-00-E2J" secondAttribute="top" constant="137" id="eJp-Nd-am2"/>
+                            <constraint firstItem="uAU-00-E2J" firstAttribute="trailing" secondItem="jaO-vZ-OpK" secondAttribute="trailing" constant="64" id="lbm-xh-xkC"/>
+                            <constraint firstItem="uAU-00-E2J" firstAttribute="trailing" secondItem="9Ia-81-JM8" secondAttribute="trailing" constant="54" id="msH-aB-10c"/>
+                            <constraint firstItem="uAU-00-E2J" firstAttribute="trailing" secondItem="jFw-my-APt" secondAttribute="trailing" constant="64" id="rWM-YG-1hb"/>
+                            <constraint firstItem="jFw-my-APt" firstAttribute="top" secondItem="jaO-vZ-OpK" secondAttribute="bottom" constant="32" id="uif-GH-yX7"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3DD-gI-sq4"/>
+                    <connections>
+                        <outlet property="tituloQuestaoLabel" destination="9Ia-81-JM8" id="8Me-Jn-zzS"/>
+                        <outletCollection property="botoesRespostas" destination="jaO-vZ-OpK" collectionClass="NSMutableArray" id="K62-Q2-tHt"/>
+                        <outletCollection property="botoesRespostas" destination="jFw-my-APt" collectionClass="NSMutableArray" id="5SV-Ev-hdS"/>
+                        <outletCollection property="botoesRespostas" destination="vX2-Tx-6FO" collectionClass="NSMutableArray" id="FJk-8L-MRn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qrk-jT-UJm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
